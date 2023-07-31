@@ -12,7 +12,7 @@ import {
 } from './launch-types'
 
 export type LaunchModel = {
-  id: number
+  id: unknown
   flightNumber: number
   name: string
   dateUtc: string

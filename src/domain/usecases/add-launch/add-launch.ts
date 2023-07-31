@@ -12,7 +12,6 @@ import {
 } from '../../models/launch/launch-types'
 
 export type AddLaunchModel = {
-  id: number
   flightNumber: number
   name: string
   dateUtc: string
