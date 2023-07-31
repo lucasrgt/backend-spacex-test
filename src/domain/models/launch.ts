@@ -22,6 +22,7 @@ export interface LaunchModel {
   payloads: Payload[]
   launchpad: LaunchPad
   cores: Core[]
+  links: Links
   autoUpdate: boolean
   launchLibraryId: string
 }
