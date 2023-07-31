@@ -1,4 +1,4 @@
-export interface RoadsterModel {
+export type RoadsterModel = {
   name: string
   launchDateUtc: string
   launchDateUnix: number

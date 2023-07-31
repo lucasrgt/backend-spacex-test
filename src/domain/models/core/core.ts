@@ -1,12 +1,14 @@
-export interface CoreModel {
+import { CoreStatus } from './core-types'
+
+export type CoreModel = {
   serial: string
   block: number
-  status: 'active' | 'inactive' | 'unknown' | 'expended' | 'lost' | 'retired'
+  status: CoreStatus
   reuseCount: number
   rtlsAttempts: number
   rtlsLandings: number
   asdsAttempts: number
   asdsLandings: number
   lastUpdate: string
-  launches: number[]
+  launchIds: unknown[]
 }

@@ -1,4 +1,6 @@
-export interface PayloadModel {
+import { Dragon, Launch } from './payload-type'
+
+export type PayloadModel = {
   name: string
   type: string
   reused: boolean
@@ -26,22 +28,4 @@ export interface PayloadModel {
   argOfPericenter: number
   meanAnomaly: number
   dragon: Dragon
-}
-
-interface Launch {
-  launchId: number
-}
-
-interface Dragon {
-  capsule: Capsule
-  massReturnedKg: number
-  massReturnedLbs: number
-  flightTimeSec: number
-  manifest: string
-  waterLanding: boolean
-  landLanding: boolean
-}
-
-interface Capsule {
-  capsuleId: number
 }

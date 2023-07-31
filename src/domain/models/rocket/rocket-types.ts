@@ -1,39 +1,19 @@
-export interface RocketModel {
-  name: string
-  type: string
-  active: boolean
-  stages: number
-  boosters: number
-  costPerLaunch: number
-  successRatePct: number
-  firstFlight: string
-  country: string
-  company: string
-  height: Height
-  diameter: Diameter
-  mass: Mass
-  payloadWeights: unknown
-  firstStage: FirstStage
-  secondStage: SecondStage
-  engines: Engines
-}
-
-interface Height {
+export type Height = {
   meters: number
   feet: number
 }
 
-interface Diameter {
+export type Diameter = {
   meters: number
   feet: number
 }
 
-interface Mass {
+export type Mass = {
   kg: number
   lb: number
 }
 
-interface FirstStage {
+export type FirstStage = {
   reusable: boolean
   engines: number
   fuelAmountTons: number
@@ -42,12 +22,12 @@ interface FirstStage {
   thrustVacuum: Thrust
 }
 
-interface Thrust {
+export type Thrust = {
   kN: number
   lbf: number
 }
 
-interface SecondStage {
+export type SecondStage = {
   reusable: boolean
   engines: number
   fuelAmountTons: number
@@ -56,17 +36,17 @@ interface SecondStage {
   payloads: Payloads
 }
 
-interface Payloads {
+export type Payloads = {
   optionOne: string
   compositeFairing: CompositeFairing
 }
 
-interface CompositeFairing {
+export type CompositeFairing = {
   height: Height
   diameter: Diameter
 }
 
-interface Engines {
+export type Engines = {
   number: number
   type: string
   version: string
@@ -84,16 +64,16 @@ interface Engines {
   description: string
 }
 
-interface ISP {
+export type ISP = {
   seaLevel: number
   vacuum: number
 }
 
-interface LandingLegs {
+export type LandingLegs = {
   number: number
   material: unknown
 }
 
-interface FlickrImages {
+export type FlickrImages = {
   type: string[]
 }

@@ -1,6 +1,9 @@
 import fg from 'fast-glob'
 import { Express, Router } from 'express'
 
+/**
+ * Dynamically import all routes inside "/routes" folder that ends with routes.ts extension.
+ */
 export default (app: Express): void => {
   const router = Router()
   app.use('/', router)

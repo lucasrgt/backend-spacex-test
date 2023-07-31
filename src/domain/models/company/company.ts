@@ -1,4 +1,6 @@
-export interface CompanyModel {
+import { Headquarter, Links } from './company-types'
+
+export type CompanyModel = {
   name: string
   founder: string
   founded: number
@@ -14,17 +16,4 @@ export interface CompanyModel {
   headquarters: Headquarter[]
   links: Links
   summary: string
-}
-
-interface Headquarter {
-  address: string
-  city: string
-  state: string
-}
-
-interface Links {
-  website: string
-  flickr: string
-  twitter: string
-  elonTwitter: string
 }

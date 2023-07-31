@@ -1,13 +1,9 @@
-export interface LandpadModel {
+import { Images, LandpadStatus } from './landpad-types'
+
+export type LandpadModel = {
   name: string
   fullName: string
-  status:
-    | 'active'
-    | 'inactive'
-    | 'unknown'
-    | 'retired'
-    | 'lost'
-    | 'under construction'
+  status: LandpadStatus
   type: string
   locality: string
   region: string
@@ -17,10 +13,6 @@ export interface LandpadModel {
   landindSuccesses: number
   wikipedia: string
   details: string
-  launchesIds: number[]
+  launchesIds: unknown[]
   images: Images
-}
-
-interface Images {
-  large: string[]
 }

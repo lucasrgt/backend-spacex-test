@@ -1,14 +1,4 @@
-export interface StarlinkModel {
-  version: string
-  launchId: number
-  longitude: number
-  latitude: number
-  heightKm: number
-  velocityKms: number
-  spaceTrack: SpaceTrack
-}
-
-interface SpaceTrack {
+export type SpaceTrack = {
   ccdsdsOmmVers: string
   comment: string
   creationDate: string

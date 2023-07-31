@@ -1,3 +1,5 @@
+import { Launch } from './ship-types'
+
 export interface ShipModel {
   name: string
   legacyId: string
@@ -22,8 +24,4 @@ export interface ShipModel {
   link: string
   image: string
   launches: Launch
-}
-
-interface Launch {
-  launchId: number
 }
