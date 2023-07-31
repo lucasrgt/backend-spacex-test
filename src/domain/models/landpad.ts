@@ -18,9 +18,9 @@ export interface LandpadModel {
   wikipedia: string
   details: string
   launchesIds: number[]
-  images: Image
+  images: Images
 }
 
-interface Image {
+interface Images {
   large: string[]
 }
