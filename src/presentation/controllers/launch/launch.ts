@@ -1,4 +1,4 @@
-import { AddLaunch } from '../../../domain/usecases/add-launch/add-launch-protocol'
+import { AddLaunch } from '../../../domain/usecases/add-launch/add-launch'
 import { MissingParamError, InvalidParamError } from '../../errors'
 import { badRequest, ok, serverError } from '../../helpers/http-helpers'
 import { Controller, HttpRequest, HttpResponse } from '../../contracts'

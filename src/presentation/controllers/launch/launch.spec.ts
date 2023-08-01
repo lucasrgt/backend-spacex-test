@@ -1,6 +1,6 @@
 import { LaunchModel } from '../../../domain/models'
-import { AddLaunchModel } from '../../../domain/usecases/add-launch/add-launch'
-import { AddLaunch } from '../../../domain/usecases/add-launch/add-launch-protocol'
+import { AddLaunchModel } from '../../../domain/usecases/add-launch/add-launch-types'
+import { AddLaunch } from '../../../domain/usecases/add-launch/add-launch'
 import { LaunchController } from './launch'
 
 import { MissingParamError } from '../../errors'

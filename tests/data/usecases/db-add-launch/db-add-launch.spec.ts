@@ -1,6 +1,6 @@
 import { AddLaunchRepository } from '../../../../src/data/contracts/add-launch-repository'
 import { LaunchModel } from '../../../../src/domain/models'
-import { AddLaunchModel } from '../../../../src/domain/usecases/add-launch/add-launch'
+import { AddLaunchModel } from '../../../../src/domain/usecases/add-launch/add-launch-types'
 import { fakeLaunch } from '../../../shared/fake-models/fake-launch'
 
 const makeAddLaunchRepository = (): AddLaunchRepository => {

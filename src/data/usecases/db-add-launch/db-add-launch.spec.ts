@@ -1,5 +1,5 @@
 import { LaunchModel } from '../../../domain/models'
-import { AddLaunchModel } from '../../../domain/usecases/add-launch/add-launch'
+import { AddLaunchModel } from '../../../domain/usecases/add-launch/add-launch-types'
 import { AddLaunchRepository } from '../../contracts/add-launch-repository'
 import { fakeLaunch } from '../../../../tests/shared/fake-models/fake-launch'
 
