@@ -29,4 +29,19 @@ describe('DbAddLaunch Usecase', () => {
     // assert
     expect(addSpy).toHaveBeenCalledWith(fakeLaunch)
   })
+  test('should throw if AddLaunchRepository throws', async () => {
+    // arrange
+    const sut = makeSut()
+    jest
+      .spyOn(sut, 'add')
+      .mockReturnValueOnce(
+        new Promise((resolve, reject) => reject(new Error()))
+      )
+
+    // act
+    const promise = sut.add(fakeLaunch)
+
+    // assert
+    await expect(promise).rejects.toThrow()
+  })
 })
