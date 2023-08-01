@@ -5,7 +5,7 @@ import { fakeLaunch } from './fake-data'
 
 const makeAddLaunchRepository = (): AddLaunchRepository => {
   class AddLaunchRepositoryStub implements AddLaunchRepository {
-    async add(_launchData: AddLaunchModel): Promise<LaunchModel> {
+    async add(launchData: AddLaunchModel): Promise<LaunchModel> {
       return new Promise((resolve) => resolve(fakeLaunch))
     }
   }
