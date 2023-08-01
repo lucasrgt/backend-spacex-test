@@ -1,7 +1,7 @@
-import { LaunchModel } from '../../../domain/models'
-import { AddLaunchModel } from '../../../domain/usecases/add-launch/add-launch'
-import { AddLaunchRepository } from '../../contracts/add-launch-repository'
-import { fakeLaunch } from '../../../../tests/shared/fake-models/fake-launch'
+import { AddLaunchRepository } from '../../../../src/data/contracts/add-launch-repository'
+import { LaunchModel } from '../../../../src/domain/models'
+import { AddLaunchModel } from '../../../../src/domain/usecases/add-launch/add-launch'
+import { fakeLaunch } from '../../../shared/fake-models/fake-launch'
 
 const makeAddLaunchRepository = (): AddLaunchRepository => {
   class AddLaunchRepositoryStub implements AddLaunchRepository {

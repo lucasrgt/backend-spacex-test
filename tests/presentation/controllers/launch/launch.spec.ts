@@ -1,10 +1,9 @@
-import { LaunchModel } from '../../../domain/models'
-import { AddLaunchModel } from '../../../domain/usecases/add-launch/add-launch'
-import { AddLaunch } from '../../../domain/usecases/add-launch/add-launch-protocol'
-import { LaunchController } from './launch'
-
-import { MissingParamError } from '../../errors'
-import { fakeLaunch } from '../../../../tests/shared/fake-models/fake-launch'
+import { LaunchModel } from '../../../../src/domain/models'
+import { AddLaunchModel } from '../../../../src/domain/usecases/add-launch/add-launch'
+import { AddLaunch } from '../../../../src/domain/usecases/add-launch/add-launch-protocol'
+import { LaunchController } from '../../../../src/presentation/controllers/launch/launch'
+import { MissingParamError } from '../../../../src/presentation/errors'
+import { fakeLaunch } from '../../../shared/fake-models/fake-launch'
 
 const makeAddLaunch = (): AddLaunch => {
   class AddLaunchStub implements AddLaunch {

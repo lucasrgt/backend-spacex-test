@@ -1,7 +1,7 @@
 import { LaunchModel } from '../../../domain/models'
 import { AddLaunchModel } from '../../../domain/usecases/add-launch/add-launch'
 import { AddLaunch } from '../../../domain/usecases/add-launch/add-launch-protocol'
-import { AddLaunchRepository } from '../../protocols/add-launch-repository'
+import { AddLaunchRepository } from '../../contracts/add-launch-repository'
 
 export class DbAddLaunch implements AddLaunch {
   private readonly addLaunchRepository: AddLaunchRepository

@@ -1,7 +1,7 @@
 import { AddLaunch } from '../../../domain/usecases/add-launch/add-launch-protocol'
 import { MissingParamError, InvalidParamError } from '../../errors'
 import { badRequest, ok, serverError } from '../../helpers/http-helpers'
-import { Controller, HttpRequest, HttpResponse } from '../../protocols'
+import { Controller, HttpRequest, HttpResponse } from '../../contracts'
 
 export class LaunchController implements Controller {
   private readonly addLaunch: AddLaunch

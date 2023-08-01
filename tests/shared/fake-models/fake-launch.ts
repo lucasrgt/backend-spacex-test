@@ -1,4 +1,4 @@
-import { LaunchModel } from '../../../domain/models'
+import { LaunchModel } from '../../../src/domain/models'
 
 export const fakeLaunch: LaunchModel = {
   id: 'valid_id',

@@ -1,3 +1,4 @@
+import './import-alias'
 import express from 'express'
 import setupMiddlewares from './middlewares'
 import setupRoutes from './routes'
